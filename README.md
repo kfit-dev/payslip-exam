@@ -2,41 +2,57 @@
 
 1. Install Ruby
 2. Install Bundler `gem install bundler`
-3. Clone this repository using your personal github account.
-4. Create a local branch from your clone.
-5. Run `bundle install` This will install all dependencies for our test runner, rspec.
+3. CREATE A NEW REPO in github
+4. Add this README file on your new repo
+5. Create a feature branch from your clone
+6. Run `bundle install` This will install all dependencies for our test runner
+7. Add a unit test framework you can select between minitest or rspec
 
 If you have any question or clarification about the code. Please create an issue on the main repo and tag me @renlesterdg
 
 ### What do we expect?
 
-- That you are able to clone a repo, create a branch and a pull request using git and github.
-- That you can make multiple commits with a good commit message. Show us your best code and the steps you took not the final state of code.
-- Unit tests are all passing (green) if you have any.
-- You are able to design and create the solution using Object Oriented.
-- You are able to discuss your thoughts on clean code and unit testing and apply it in your solution.
-- You are able to use atleast 1 design pattern.
+That you are able to:
+- create a repo, create a branch and a pull request using git and github.
+- multiple commits with a good commit message. We are more interested on your thought processes rather than the final code
+- create unit tests
+- design and create the solution using Object Oriented approach
+- use atleast 1 design pattern
+- create a REST API
 
 ### Instructions
 
-- After forking the repository, please create a feature branch.
 - When you are done, Please open a `pull request` from YOUR `feature branch` to YOUR `master branch`.
 - Please come prepared to talk about your approach per commit.
 
-## Story
+## Requirement
 
-You are tasked to create a function to compute a monthly payslip of an individual based on his annual salary.
+1. You are tasked to create a function to compute a monthly payslip of an individual based on his annual salary.
 Example:
 
 `generate_monthly_payslip "Ren" 60000`
 
-will return an output:
+will return an output in console:
 
 ```
  Monthly Payslip for: "Ren"
- Gross Monthly Income: $5000
- Monthly Income Tax: $500
- Net Monthly Income: $4500
+ Gross Monthly Income: $5000.00
+ Monthly Income Tax: $500.00
+ Net Monthly Income: $4500.00
+```
+- 2 decimal places
+
+2. Create a REST API to expose your function [You can get some idea here](https://www.google.com/search?safe=active&ei=9euNXp-VPK6d4-EP-Ou7oAM&q=simple+rest+api+ruby&oq=simple+rest+api+ruby)
+- GET
+- REQUEST Parameters should include employee_name and annual_salary
+- The response body should return the following structure:
+```
+{
+  "employee_name": string,
+  "gross_monthly_income": string,
+  "monthly_income_tax": string,
+  "net_monthly_income": string,
+}
 ```
 
 ## The Tax Bracket is as follows
