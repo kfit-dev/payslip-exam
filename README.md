@@ -27,7 +27,7 @@ That you are able to:
 - ✔️do a CRUD to a database
 
 ## Requirements 📝
-please create 1 feature branch per requirement and create 1 pull request per feature branch and update the base branch of the previous requirement/feature branch. So in the end you have 4 pull request in total per requirement - https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/changing-the-base-branch-of-a-pull-request
+please create 1 feature branch per requirement then create 1 pull request per feature branch. Update the base branch of the previous requirement/feature branch so in the end you'll have 4 pull request in total per requirement - https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/changing-the-base-branch-of-a-pull-request
 
 | base branch | feature branch |
 |----------|:-------------:|
